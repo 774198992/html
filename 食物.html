@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food</title>
+    <style>
+         .nav {
+            margin: 0px auto;
+            text-align: center;
+
+        }
+
+        .nav a {
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            background-color: rgb(218, 189, 193);
+            text-align: center;
+            line-height: 350px;
+            color: rgb(61, 185, 207);
+            text-decoration: none;
+            font-size: 30px;
+            margin: auto;
+
+
+        }
+
+        .nav .bg0 {
+            background: url(imgs/hengfu.png) no-repeat;
+        }
+
+        .nav .bg1 {
+            background: url(imgs/book.png) no-repeat;
+
+        }
+
+        .nav .bg2 {
+            background: url(imgs/movie.png) no-repeat;
+        }
+
+        .nav .bg3 {
+            background: url(imgs/food.png) no-repeat;
+        }
+
+        .nav .bg4 {
+            background: url(imgs/friends.png) no-repeat;
+        }
+
+        .bi {
+            text-align: center;
+            margin: auto;
+            display: inline-block;
+            width: 50px;
+            height: 40px;
+
+        }
+
+        .bt {
+            text-align: center;
+            margin: auto;
+            display: inline-block;
+            width: 500px;
+            height: 200px;
+            
+
+        }
+        .bzi {
+            text-align: center;
+            margin: auto;
+            display: inline-block;
+            width: 280px;
+            height: 416px;
+        }
+        .bz {
+            text-align: center;
+            margin: auto;
+            display: inline-block;
+            width: 520px;
+            height: 200px;
+            background-color: #263859;
+            color: rgb(219, 72, 72);
+       
+
+        }
+
+        
+    </style>
+</head>
+<body background="images\5.jpg">
+    <div class="nav">
+     
+    </div>
+
+
+    </div>
+    <div class="nav">
+      点击名字查看我的绯闻
+        <h2><a href="https://www.shangc.net/yule/2017/1105/54188053.html">吴佳奇(点)</a> </h2>
+       
+        <span class="bt">
+             
+          <h2><pre>  我一直以为只要保持低调，就没有人认得出我是帅哥，</pre>
+        </br><pre>  可是我错了，像我这样拉风的男人，</pre>
+        </br><pre>  就好比暗夜裏的萤火虫，田地裏的金条子，</pre>
+        </br><pre>  是那麽的鲜明，那麽地出众，特别是我那忧郁的眼神</pre>
+        </br><pre>   淩乱的发型,还有我裤袋裏露出的半包旺旺雪饼都tmd深深地出卖了我</pre>
+           </h2>  
+        </span>
+
+</body> 
+          <span class="bi">
+            <script type="text/javascript">
+                // index：索引， len：长度
+                var index = 0, len;
+                // 类似获取一个元素数组
+                var imgBox = document.getElementsByClassName("img-slide");
+                len = imgBox.length;
+                imgBox[index].style.display = 'block';
+                // 逻辑控制函数
+                function slideShow() {
+                    index ++;
+                    // 防止数组溢出
+                    if(index >= len) index = 0;
+                    // 遍历每一个元素
+                    for(var i=0; i<len; i++) {
+                        imgBox[i].style.display = 'none';
+                    }
+                    // 每次只有一张图片显示
+                    imgBox[index].style.display = 'block';
+                }
+                
+                // 定时器，间隔3s切换图片
+                setInterval(slideShow, 2000);
+                
+            </script>
+           
+
+        </span>
+</html>
+<head>
+    <meta charset="utf-8">
+    <title>轮播图测试</title>
+<!-- 外部导入Css文件，链接式 -->
+<link type="text/css" rel="stylesheet" href="css/slideShow.css"/>    
+</head>
+<style>
+     p 
+     {
+        text-align: center;
+          font-size: 25px;
+           color: cadetblue;
+           font-family: fantasy;
+        }
+
+/* id选择器 */
+        #hr1
+         {
+             background-color: cadetblue;
+             height: 2px;
+             width: 75%;
+         }
+
+         /* 类选择器 */
+            .imgbox {
+          border-top: 5px solid cadetblue;
+          /* 避免因窗口变化影响图片效果 */
+         width: 60%;
+         height: 40%;
+         margin: 0 auto;
+      }
+
+         .img {
+         width: 60%;
+          height: 50%;
+         margin: 0 auto;
+         display: none;
+     }
+</style>
+<body>
+
+    <!-- 建立一个div控件作为图片框 -->
+    <div class="imgBox">
+        <!-- alt：图片路径失败时替换显示内容 -->
+        <img class="img-slide img" src="images\QQ图片20201130233507.jpg" width="480px" height="300px" alt="">
+        <img class="img-slide img" src="images\1606746035293.jpeg" width="600px" height="400px" alt="">
+        <img class="img-slide img" src="images\1606747465258.jpeg" width="600px" height="400px" alt=""> 
+        <img class="img-slide img" src="images\1606746615053.jpeg" width="600px" height="400px" alt=""> 
+    </div>
+</body>
+
+<script type="text/javascript">
+    // index：索引， len：长度
+    var index = 0, len;
+    // 类似获取一个元素数组
+    var imgBox = document.getElementsByClassName("img-slide");
+    len = imgBox.length;
+    imgBox[index].style.display = 'block';
+    // 逻辑控制函数
+    function slideShow() {
+        index ++;
+        // 防止数组溢出
+        if(index >= len) index = 0;
+        // 遍历每一个元素
+        for(var i=0; i<len; i++) {
+            imgBox[i].style.display = 'none';
+        }
+        // 每次只有一张图片显示
+        imgBox[index].style.display = 'block';
+    }
+    
+    // 定时器，间隔3s切换图片
+    setInterval(slideShow, 2000);
+    
+</script>
